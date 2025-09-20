@@ -75,6 +75,12 @@ const Header = ({ cart }) => {
           >
             Contact Us
           </Link>
+          <Link
+            to="/blog"
+            className="cursor-pointer text-[#656565] hover:text-black transition-colors"
+          >
+            Blog
+          </Link>
         </ul>
         <ul className="flex space-x-4 items-center">
           {/* Savatcha */}

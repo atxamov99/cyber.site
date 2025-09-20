@@ -8,10 +8,10 @@ import Categories from "./components/Categories";
 import Footer from "./components/Footer";
 import SignUp from "./page/SignUp";
 import ContactUs from "./page/ContactUs";
-import Blog from "./page/About";
 import Wallet from "./page/Wallet";
 import Profile from "./page/Profile";
 import Login from "./page/Login";
+import Blog from "./page/Blog";
 import Store from "./ShopNow/Store";
 import OrderSummary from "./Cart/OrderSummary";
 import CartItem from "./Cart/CartItem";
@@ -20,6 +20,7 @@ import ShippingStep from "./steps/ShippingStep";
 import PaymentStep from "./steps/PaymentStep";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import About from "./page/About";
 
 // Savatcha sahifasi
 const CartPage = ({
@@ -184,8 +185,9 @@ const App = () => {
                 </>
               }
             />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/about" element={<Blog />} />
+            <Route path="/about" element={<About />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/wallet" element={<Wallet />} />
             <Route path="/shop" element={<Store addToCart={addToCart} />} />
